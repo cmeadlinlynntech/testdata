@@ -1,7 +1,5 @@
 ### Import modules
 import sys
-{sys.executable} -m pip install openpyxl
-pip install pandas
 
 from os import listdir
 from os.path import isfile, join
