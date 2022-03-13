@@ -38,7 +38,8 @@ data_dict['x'] = first_data_file_data[0].tolist()
 rest = data_files[0:]
 for f in rest:
     header_title = f
-    data_dict[header_title] = read_data_file(f)[1].tolist()
+    header_title_list = header_title.split(".")
+    data_dict[header_title_list[0]] = read_data_file(f)[1].tolist()
     
 df = pd.DataFrame(data = data_dict)
 
