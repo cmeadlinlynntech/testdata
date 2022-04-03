@@ -15,6 +15,7 @@ DATA_PATH = '.'
 def list_files():
     files = [f for f in listdir(DATA_PATH) if isfile(join(DATA_PATH, f))]
     files = [f for f in files if f.endswith(".Absorbance")]
+    files.sort()
     return files
 
 data_files = list_files()
